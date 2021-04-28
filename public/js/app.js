@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/buzon/sw.js';
+var swLocation = '../sw.js';
 
 var swReg;
 
