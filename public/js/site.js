@@ -68,7 +68,7 @@ function newinput(){
 // Obtener municipios del servidor
 function getMun() {
 
-    fetch('/api/mun')
+    fetch('/public/api/mun')
         .then( res => res.json() )
         .then( posts => {
 

@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 var upload = multer({ storage: storage })
 const app = express();
 
-const publicPath = path.resolve(__dirname);
+const publicPath = path.resolve(__dirname, '../public');
 //const publicPath = path.resolve(__dirname, '../public');
 const port = process.env.PORT || 3000;
 
