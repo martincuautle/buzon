@@ -89,7 +89,7 @@ router.get('/key', (req, res) => {
 // que nosotros queramos
 // ES ALGO que se controla del lado del server
 const connection= require('../server/base');
-router.get('/mun',(req,res)=> {
+router.get('public/api/mun',(req,res)=> {
     connection.query("SELECT  DISTINCT cp_municipio FROM cp where cp_estado='PUEBLA' ORDER BY cp_municipio ASC", (err, rows, fields) =>{
       if(!err){
         var cadena="";

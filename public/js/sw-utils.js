@@ -44,7 +44,7 @@ function actualizaCacheStatico( staticCache, req, APP_SHELL_INMUTABLE ) {
 function manejoApiMensajes( cacheName, req ) {
 
 
-    if ( (req.url.indexOf('/api') >= 0 ) || req.url.indexOf('/api/localidades') >= 0 || req.url.indexOf('/api/inf') >= 0 ) {
+    if ( (req.url.indexOf('/public/api') >= 0 ) || req.url.indexOf('/api/localidades') >= 0 || req.url.indexOf('/api/inf') >= 0 ) {
 
         return fetch( req );
 
